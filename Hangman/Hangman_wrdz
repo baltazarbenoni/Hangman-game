@@ -1,0 +1,23 @@
+using System;
+
+class Words
+{
+    static string RandomWord()
+    {
+        string[] animals = { "ant", "baboon", "badger", "bat", "bear", "beaver", "bee", "camel", "cat", "clam", "cobra", "cougar", "coyote", "crow", "deer", "dog", "dolphin", "donkey", "duck", "eagle", "ferret", "fox", "frog", "goat", "goose", "hawk", "horse", "leopard", "lion", "lizard", "llama", "mole", "monkey", "moose", "mouse", "mule", "otter", "owl", "panda", "parrot", "pigeon", "python", "raccoon", "rabbit", "ram", "rat", "raven", "rhino", "salmon", "seal", "shark", "sheep", "skunk", "sloth", "snake", "spider", "stork", "swan", "tiger", "turkey", "turtle", "weasel", "whale", "wolf", "wombat", "zebra" };
+        int listlength = animals.Length;
+        Random num = new Random();
+        int randomIndex = num.Next(0, listlength -1);
+        return animals[randomIndex];
+    }
+
+    static void GetNewGuess()
+    {
+        Console.WriteLine("Guess another character or another word!");
+        string guess = Console.ReadLine();
+    }
+    static void CheckGuess(string guess)
+    {
+
+    }
+}
